@@ -35,6 +35,7 @@ height: auto;
 --cornflower:#E7E9FC;
 --cloude:#F4F4FD;
 --write-title:#FFFFFF;
+--grey:rgba(46, 47, 66, 0.7);
 --mp-defolt: 120px;
 }
 
@@ -166,9 +167,15 @@ color: var(--ocean);
 /*------------------HERO-------------------*/
 
 .hero {
-background: var(--navi-blue);
+margin: 0 auto;
+max-width: 1440px;
 padding-bottom: 204px;
 padding-top: 188px;
+background-image: url(../images/hero-bg.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-color: rgba(46, 47, 66, 0.7);
 
 }
 .hero-header {
