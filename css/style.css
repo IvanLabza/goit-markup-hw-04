@@ -108,7 +108,13 @@ body {
   align-items: center
 }
 
-.head-navigation {}
+.head-navigation:is(::before, :active, :hover) {
+  content: '';
+  max-width: 67px;
+  height: 4px;
+  background: var(--ocean);
+  border-radius: 2px;
+}
 
 .head-navigation-list {
   display: flex;
@@ -124,12 +130,11 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navi-blue);
+  order: -1;
 
 }
 
-.head-navigation-list-link:hover,
-.head-navigation-list-link:focus,
-.head-navigation-list-link:active {
+.head-navigation-list-link:is(:active,:hover,:focus) {
   color: var(--ocean);
 }
 
@@ -172,6 +177,11 @@ body {
 .contacts-tel-link:hover,
 .contacts-tel-link:focus {
   color: var(--ocean);
+}
+
+.section{
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /*------------------HERO-------------------*/
@@ -373,15 +383,50 @@ body {
   padding-bottom: 24px;
 }
 
-.teamcart-svg-list {}
+.teamcart-svg-list {
+  border-radius: 50%;
+  background-color: var(--iris);
+}
 
 .teamcart-svg-content>svg {
   display: inline-block;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  background-color: var(--iris);
 }
+
+
+/*-----------------custom---------------*/
+
+.custom {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+
+.custom-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+
+.custom-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.custom-content {
+  border: 1px solid var(--ligth-slate);
+  border-radius: 4px;
+  max-width: 168px;
+}
+
+.custom-svg {}
 
 /*------------------FOOTER---------------*/
 
@@ -405,6 +450,26 @@ body {
   color: var(--cloude);
 
 }
+
+.ftr-title{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.ftr-title {}
+
+.teamcart-svg {}
+
+.ftr-svg-list {}
+
+.ftr-svg-content {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+
 
 /*-------------PORTFOLIO NAV---------------*/
 .main-nav {
@@ -473,10 +538,6 @@ body {
   row-gap: 48px;
   column-gap: 24px;
 }
-
-.content-list-element {}
-
-.content-img {}
 
 .content-subtitle {
   color: var(--navi-blue);
