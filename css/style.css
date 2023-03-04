@@ -169,10 +169,11 @@ color: var(--ocean);
 .hero {
 padding-bottom: 204px;
 padding-top: 188px;
+background-color: var(--grey);
 background-image: url(../images/hero-bg.png);
 background-position: center;
 background-repeat: no-repeat;
-background-size: 1440px auto;
+background-size: cover;
 
 
 }
@@ -228,6 +229,7 @@ clip: rect(0 0 0 0);
 overflow: hidden;
 }
 
+
 .about-list-flex{
 display: flex;
 gap: 24px;
@@ -240,6 +242,19 @@ padding: 0;
 max-width: 264px;
 text-decoration: none;
 }
+
+.about-svg{
+display: inline-block;
+padding: 24px 0;
+margin-bottom: 8px;
+width: 264px;
+height: 112px;
+left: 0px;
+top: 0px;
+background-color:var(--cloude);
+border-radius: 4px;
+}
+
 .about-list-header{
 font-weight: 500;
 font-size: 20px;
@@ -333,7 +348,28 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--slate);
 margin-top: 8px;
-padding-bottom: 32px;
+}
+
+.teamcart-svg {
+  padding: 0;
+  padding-top: 8px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding-bottom: 24px;
+}
+
+.teamcart-svg-list {
+
+}
+
+.teamcart-svg-content>svg {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50% ;
+  background-color: var(--iris);
 }
 
 /*------------------FOOTER---------------*/
