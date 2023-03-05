@@ -184,6 +184,7 @@ body {
 .hero {
   padding-bottom: 204px;
   padding-top: 188px;
+  background-color:var(--navi-blue);;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -345,6 +346,7 @@ body {
 .teamcart-content {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--write-title);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   width: 264px;
   text-align: center;
 }
@@ -375,7 +377,7 @@ body {
   padding-bottom: 24px;
 }
 
-.teamcart-svg-list {
+.teamcart-svg-link {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -385,11 +387,9 @@ body {
   justify-content: center;
 }
 
-.teamcart-content:hover{
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
 
-.teamcart-svg-list:hover{
+
+.teamcart-svg-link:hover{
   background-color: var(--ocean);
 }
 
@@ -478,7 +478,7 @@ color: var(--ocean);
 }
 
 
-.ftr-svg-list {
+.ftr-svg-link {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -488,7 +488,9 @@ color: var(--ocean);
   justify-content: center;
 }
 
-.ftr-svg-list:hover{
+
+
+.ftr-svg-link:hover{
   background-color: var(--green);
 }
 
