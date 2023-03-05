@@ -56,6 +56,11 @@ body {
   background-color: var(--write-title);
 }
 
+.section {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .link {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -172,10 +177,7 @@ body {
   color: var(--ocean);
 }
 
-.section{
-  max-width: 1440px;
-  margin: 0 auto;
-}
+
 
 /*------------------HERO-------------------*/
 
@@ -391,10 +393,6 @@ body {
   background-color: var(--ocean);
 }
 
-.teamcart-svg-content {
-  
-}
-
 
 /*-----------------custom---------------*/
 
@@ -479,7 +477,6 @@ color: var(--ocean);
   margin-bottom: 16px;
 }
 
-.teamcart-svg {}
 
 .ftr-svg-list {
   width: 40px;
