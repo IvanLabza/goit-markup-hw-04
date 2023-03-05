@@ -108,13 +108,6 @@ body {
   align-items: center
 }
 
-.head-navigation:is(::before, :active, :hover) {
-  content: '';
-  max-width: 67px;
-  height: 4px;
-  background: var(--ocean);
-  border-radius: 2px;
-}
 
 .head-navigation-list {
   display: flex;
@@ -189,12 +182,11 @@ body {
 .hero {
   padding-bottom: 204px;
   padding-top: 188px;
-  background-color: var(--grey);
-  background-image: url(../images/hero-bg.png);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+ 
 
 }
 
@@ -272,8 +264,7 @@ body {
   margin-bottom: 8px;
   width: 264px;
   height: 112px;
-  left: 0px;
-  top: 0px;
+
   background-color: var(--cloude);
   border-radius: 4px;
 }
@@ -384,14 +375,21 @@ body {
 }
 
 .teamcart-svg-list {
-  border-radius: 50%;
-  background-color: var(--iris);
-}
-
-.teamcart-svg-content>svg {
-  display: inline-block;
   width: 40px;
   height: 40px;
+  border-radius: 50%;
+  background-color: var(--iris);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teamcart-svg-list:hover{
+  background-color: var(--ocean);
+}
+
+.teamcart-svg-content {
+  
 }
 
 
@@ -421,12 +419,25 @@ body {
 }
 
 .custom-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid var(--ligth-slate);
+  color: var(--ligth-slate);
   border-radius: 4px;
-  max-width: 168px;
+  width: 168px;
+  height: 88px;
+  padding: 16px 32px;
 }
 
-.custom-svg {}
+.custom-content:hover{
+border: 1px solid var(--ocean);
+color: var(--ocean);
+}
+
+.custom-svg{
+ fill: currentColor; 
+}
 
 /*------------------FOOTER---------------*/
 
@@ -457,18 +468,37 @@ body {
   line-height: 1.5;
 }
 
-.ftr-title {}
+.ftr-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--write-title);
+  margin-bottom: 16px;
+}
 
 .teamcart-svg {}
 
-.ftr-svg-list {}
-
-.ftr-svg-content {
-  display: inline-block;
+.ftr-svg-list {
   width: 40px;
   height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.ftr-svg-list:hover{
+  background-color: var(--green);
+}
+
+.ftr-content{
+  display: flex;
+}
+
+.ftr-soc{
+  margin-left: 120px;
+}
 
 
 /*-------------PORTFOLIO NAV---------------*/
